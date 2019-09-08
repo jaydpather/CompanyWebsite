@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>REBEL SOFTWARE</h1>
+    <p class="lead">Rebel Software is out to make kick-ass games. We're a startup, shaking up the world of mobile gaming.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Games", "Index", "Games")</h2>
+        <p>
+            Check out our games.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("About Us", "Index", "AboutUs")</h2>
+        <p>Who are we?</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Contact Us", "Index", "ContactUs")</h2>
+        <p>Want more info?</p>
+    </div>
+</div>

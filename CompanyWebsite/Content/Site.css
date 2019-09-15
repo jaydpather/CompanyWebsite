@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #202020;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,6 +24,38 @@ textarea {
     max-width: 280px;
 }
 
-ul.navbar-nav > li > a.RSNavBarItem {
-    color: red;
+ul.navbar-nav > li > a.RSnavBarItem {
+    color: #C00000;
+    font-size: 28px;
+    /*border-bottom: 1px solid #C00000;*/
+    border-right: 1px solid #C00000;
+    /*margin-bottom: 3px;*/
+    margin-right: 3px;
+    padding-right:25px;
+}
+
+.navbar {
+    background-color: #202020;
+    padding-bottom: 25px;
+}
+
+.jumbotron {
+    background-color: black;
+    color: #CF0000;
+}
+
+.lead{
+    color:white;
+}
+
+.col-md-4 a {
+    color: #CF0000;
+}
+
+.col-md-4 p {
+    color: white;
+}
+
+footer p {
+    color: #CF0000;
 }

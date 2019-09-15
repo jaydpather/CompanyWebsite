@@ -6,9 +6,10 @@
     <title>@ViewBag.Title - My ASP.NET Application</title
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/customCss")    
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:0px solid red;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,20 +20,22 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "RSNavBarItem" })</li>
-                    <li>@Html.ActionLink("Games", "Index", "Games")</li>
-                    <li>@Html.ActionLink("About Us", "Index", "AboutUs")</li>
-                    <li>@Html.ActionLink("Contact Us", "Index", "ContactUs")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "RSnavBarItem" })</li>
+                    <li>@Html.ActionLink("Games", "Index", "Games", null, new { @class = "RSnavBarItem" })</li>
+                    <li>@Html.ActionLink("About Us", "Index", "AboutUs", null, new { @class = "RSnavBarItem" })</li>
+                    <li>@Html.ActionLink("Contact Us", "Index", "ContactUs", null, new { @class = "RSnavBarItem" })</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Rebel Software</p>
-        </footer>
+        <div style="float:left; clear:left;">
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Rebel Software</p>
+            </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

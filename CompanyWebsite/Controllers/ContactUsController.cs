@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Configuration;
+using System.Net.Mail;
+using ViewModel;
+using CaptchaMvc.HtmlHelpers;
 
 namespace CompanyWebsite.Controllers
 {
@@ -12,6 +16,36 @@ namespace CompanyWebsite.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult SendEmail(ContactUsViewModel contactUsViewModel)
+        {
+            if(this.IsCaptchaValid("invalid captcha input"))
+            {
+                SendEmailToAdmin(contactUsViewModel);
+                return View("EmailSent");
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "* Invalid captca input.";
+
+                return View("Index");
+            }
+        }
+
+        private void SendEmailToAdmin(ContactUsViewModel contactUsViewModel)
+        {
+            var toEmail = ConfigurationManager.AppSettings["ContactUsEmailAddress"];
+            var emailSubject = ConfigurationManager.AppSettings["ContactUsEmailSubject"];
+
+            var mailMessage = new MailMessage(contactUsViewModel.Email, toEmail);
+            mailMessage.Subject = emailSubject;
+            mailMessage.Body = contactUsViewModel.Message;
+
+            var smtpClient = new SmtpClient("localhost", 8099);
+
+            smtpClient.Send(mailMessage);
         }
     }
 }

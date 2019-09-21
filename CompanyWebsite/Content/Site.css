@@ -59,3 +59,15 @@ ul.navbar-nav > li > a.RSnavBarItem {
 footer p {
     color: #CF0000;
 }
+
+.formCell
+{
+    padding:10px;
+    vertical-align:top;
+}
+
+.textFor50-50Column {
+    float: left;
+    width: 50%;
+    margin-right: 50px;
+}

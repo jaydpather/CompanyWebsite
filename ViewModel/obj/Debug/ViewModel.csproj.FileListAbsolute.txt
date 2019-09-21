@@ -1,0 +1,6 @@
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.pdb

@@ -1,8 +1,66 @@
-﻿
+﻿@using ViewModel;
+@using CaptchaMvc;
+@using CaptchaMvc.HtmlHelpers;
+
+@model ContactUsViewModel
+
 @{
     ViewBag.Title = "Index";
 }
 
+
 <div class="jumbotron">
     <h1>CONTACT US</h1>
+
+    <br/>
+    
+    @using (Html.BeginForm("SendEmail", "ContactUs"))
+    {
+        <table style="">
+            <tbody>
+                <tr>
+                    <td class="formCell">Name</td>
+                    <td class="formCell">
+                        @Html.TextBoxFor(x => x.Name)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="formCell">Email</td>
+                    <td class="formCell">@Html.TextBoxFor(x => x.Email)</td>
+                </tr>
+                <tr>
+                    <td class="formCell">Message</td>
+                    <td class="formCell" style="min-width:500px;">@Html.TextAreaFor(x => x.Message, 5, 100, new { style="width:100%; min-width:100%; line-height:1.1;" })</td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="border:solid 1px #C00000; padding:10px;">
+                        @Html.Captcha(4)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="color:yellow;">
+                        @ViewBag.ErrorMessage
+                    </td>
+                </tr>
+                <tr>
+                    <td class="formCell"></td>
+                    <td class="formCell">
+                        <br/>
+                        <input type="submit" value="Send" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
 </div>

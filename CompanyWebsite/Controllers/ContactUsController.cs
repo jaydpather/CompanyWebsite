@@ -43,7 +43,10 @@ namespace CompanyWebsite.Controllers
             mailMessage.Subject = emailSubject;
             mailMessage.Body = contactUsViewModel.Message;
 
-            var smtpClient = new SmtpClient("localhost", 8099);
+            var smtpServer = ConfigurationManager.AppSettings["SmtpServer"];
+            var smtpPort = int.Parse(ConfigurationManager.AppSettings["SmtpPort"]);
+
+            var smtpClient = new SmtpClient(smtpServer, smtpPort);
 
             smtpClient.Send(mailMessage);
         }

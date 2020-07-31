@@ -1,2 +1,7 @@
 CompanyWebsite/bin/*
 CompanyWebsite/obj/*
+
+.ionide/
+
+ViewModel/bin/
+ViewModel/obj/

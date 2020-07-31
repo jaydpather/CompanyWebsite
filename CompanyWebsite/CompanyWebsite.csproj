@@ -147,6 +147,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\DemoAppsController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -198,6 +199,8 @@
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
     <Content Include="Views\ContactUs\EmailSent.cshtml" />
+    <Content Include="Views\DemoApps\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutBusiness.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

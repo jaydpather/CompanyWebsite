@@ -28,6 +28,11 @@ namespace CompanyWebsite
 
             bundles.Add(new StyleBundle("~/Content/customCss").Include(
                       "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/paintStrapCss").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/paintstrap-custom-css/boostrap.css",
+                      "~/Content/paintstrap-custom-css/jumbotron.css"));
         }
     }
 }

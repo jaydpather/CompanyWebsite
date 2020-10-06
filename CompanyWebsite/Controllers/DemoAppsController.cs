@@ -13,5 +13,10 @@ namespace CompanyWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult Go()
+        {
+            return View();
+        }
     }
 }

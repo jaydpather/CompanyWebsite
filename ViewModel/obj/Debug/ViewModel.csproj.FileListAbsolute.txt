@@ -3,3 +3,4 @@ C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debu
 C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.dll
 C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.pdb
 c:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\jaydp\Documents\Github\CompanyWebsite\CompanyWebsite\ViewModel\bin\Debug\ViewModel.dll

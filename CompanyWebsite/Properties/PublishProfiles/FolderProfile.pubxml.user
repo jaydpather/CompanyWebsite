@@ -28,10 +28,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/04/2013 06:26:56</publishTime>
     </File>
     <File Include="bin/CompanyWebsite.dll">
-      <publishTime>09/24/2020 13:34:54</publishTime>
+      <publishTime>10/06/2020 08:05:26</publishTime>
     </File>
     <File Include="bin/CompanyWebsite.pdb">
-      <publishTime>09/24/2020 13:34:54</publishTime>
+      <publishTime>10/06/2020 08:05:26</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 09:07:42</publishTime>
@@ -229,10 +229,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/27/2015 21:04:30</publishTime>
     </File>
     <File Include="bin/ViewModel.dll">
-      <publishTime>09/24/2020 13:34:50</publishTime>
+      <publishTime>10/06/2020 08:05:22</publishTime>
     </File>
     <File Include="bin/ViewModel.pdb">
-      <publishTime>09/24/2020 13:34:50</publishTime>
+      <publishTime>10/06/2020 08:05:22</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/10/2013 11:28:38</publishTime>
@@ -315,8 +315,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/ContactUs/Index.cshtml">
       <publishTime>10/06/2019 00:50:45</publishTime>
     </File>
+    <File Include="Views/DemoApps/Go.cshtml">
+      <publishTime>10/06/2020 08:03:47</publishTime>
+    </File>
     <File Include="Views/DemoApps/Index.cshtml">
-      <publishTime>09/24/2020 13:32:22</publishTime>
+      <publishTime>09/29/2020 09:19:59</publishTime>
     </File>
     <File Include="Views/Games/Index.cshtml">
       <publishTime>10/06/2019 00:50:56</publishTime>

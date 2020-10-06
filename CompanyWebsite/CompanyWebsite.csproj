@@ -201,6 +201,7 @@
     <Content Include="Views\ContactUs\EmailSent.cshtml" />
     <Content Include="Views\DemoApps\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutBusiness.cshtml" />
+    <Content Include="Views\DemoApps\Go.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
